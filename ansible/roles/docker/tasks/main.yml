@@ -4,7 +4,7 @@
   docker_image:
     name: devops
     build:
-     path: /var/lib/jenkins/workspace/Myapp
+     path: /var/lib/jenkins/workspace/CD_Pipline
      pull: no
     source: build
     state: present
