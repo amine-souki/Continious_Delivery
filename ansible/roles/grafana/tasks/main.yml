@@ -1,0 +1,2 @@
+- name: Run grafana container
+  shell: docker run --name grafanaContainer -d -p 3000:3000 grafana/grafana
