@@ -22,7 +22,7 @@ pipeline
 	stage ('Build image docker'){
 	     steps{
 	         script{
-		     sh "ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml" 
+		     sh "sudo ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml --become-user=jenkins" 
                  }
               
              }
