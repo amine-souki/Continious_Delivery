@@ -1,4 +1,4 @@
 ---
 # tasks file for prometheus
 - name: Run prometheus container 
-  shell: docker run -d -p 9090:9090 -v /home/amine/Continious_Delivery/ansible/roles/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus 
+  shell: docker run -d -p 9090:9090 -v /root/Continious_Delivery/ansible/roles/prometheus:/etc/prometheus/prometheus.yml prom/prometheus 
