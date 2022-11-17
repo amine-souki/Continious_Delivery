@@ -5,9 +5,9 @@ pipeline
         stage ('Pull to github'){
             steps{
                 script{
-                    checkout([$class: 'GitSCM', branches: [[name: '*/main']],
+                    checkout([$class: 'GitSCM', branches: [[name: '*/manel']],
                         userRemoteConfigs: [[
-                            credentialsId: 'MyGithub',
+                            credentialsId: 'Mygithub',
                             url: 'https://github.com/amine-souki/Continious_Delivery.git']]])
                 }
             }

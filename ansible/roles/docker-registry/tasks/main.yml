@@ -1,13 +1,13 @@
 ---
 - name: Login to dockerHub
   docker_login:
-    username: amine1250
-    password: amine22-Docker
+    username: manelbaabou
+    password: dockerhubmanel123
     reauthorize: yes
 - name: Tag and push to docker hub
   docker_image:
     name: devops
-    repository: amine1250/devops
+    repository: manelbaabou/devops
     tag: latest
     push: yes
     source: local
