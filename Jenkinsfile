@@ -37,22 +37,7 @@ pipeline
              }
         }
         
-        stage ('Run prometheus container'){
-             steps{
-                 script{
-                     sh "ansible-playbook ansible/prometheus.yml -i ansible/inventory/host.yml --become-user=jenkins"
-                 }
-
-             }
-        }
-        
-        stage ('Run grafana container'){
-             steps{
-                 script{
-                     sh "ansible-playbook ansible/grafana.yml -i ansible/inventory/host.yml --become-user=jenkins"
-                 }
-
-             }
+    
         }		
      }
 }
